@@ -20,6 +20,7 @@ import lombok.ToString;
 public class User extends BaseEntity {
 
 	private String name;
+	@Pattern(regexp= "^[0-9.{10}]+$", message= "saisir un numéro à 10 chiffres")
 	private String mobile;
 	@Pattern(regexp= "^[a-zA-Z0-9_!#$%&’*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$", message= "saisir un email valide")
 	private String email;
@@ -28,6 +29,7 @@ public class User extends BaseEntity {
 	private String password;
 	@Embedded
 	private Address address;
+	
 	@ManyToMany
 	private List<Post> posts;
 	
