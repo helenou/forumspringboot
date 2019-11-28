@@ -22,8 +22,7 @@ public class Replies extends BaseEntity {
 	private String type;
 	private String description;
 	
-	@ManyToOne
-	private List<Replies> replies;
+
 	
 	public Replies(int replies_user_id, String title, String type, String description) {
 		super();

@@ -5,7 +5,7 @@ import java.util.List;
 
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.Pattern;
 
@@ -30,7 +30,7 @@ public class User extends BaseEntity {
 	@Embedded
 	private Address address;
 	
-	@ManyToMany
+	@OneToMany(mappedBy= "userId")
 	private List<Post> posts;
 	
 	public User(String name, String mobile, String email, String username, String password, Address address) {

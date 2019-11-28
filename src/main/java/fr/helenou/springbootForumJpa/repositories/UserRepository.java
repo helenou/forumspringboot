@@ -21,7 +21,6 @@ public interface UserRepository extends JpaRepository<User, Long> {
 	List<User> findByNameLike(String name);
 	List<User> findByNameContains(String name);
 	
-
 	
 	List<User> findByMobile(String mobileNum, Pageable pageable);
 	User findByMobile(String mobileNum);
