@@ -40,3 +40,13 @@ out
 test-output
 atlassian-ide-plugin.xml
 .gradletasknamecache
+
+
+
+.sts4-cache/
+.factorypath
+
+.mvn/wrapper
+mvnw
+mvnw.cmd
+HELP.md
