@@ -30,7 +30,7 @@ public class User extends BaseEntity {
 	@Embedded
 	private Address address;
 	
-	@OneToMany(mappedBy= "userId")
+	@OneToMany(mappedBy= "user")
 	private List<Post> posts;
 	
 	public User(String name, String mobile, String email, String username, String password, Address address) {
